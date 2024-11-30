@@ -1,0 +1,175 @@
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #4e0c45, #910ddd, #ff0bd6, #d6089c);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header .header-image {
+  background: url('file:///C:/Users/User/Pictures/4315185.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #333;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #6a11cb;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  header .header-image h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  table {
+    width: 95%;
+  }
+}
+footer {
+  background-image: url('file:///C:/Users/User/Pictures/4315185.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  color: white; 
+}
+  
+
+  
